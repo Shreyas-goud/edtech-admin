@@ -41,7 +41,7 @@ function AdminCRUD() {
     // eslint-disable-next-line
   }, []);
 
-  const BACKEND_URL = process.env.EDTECH_BACKEND_URL;
+  const BACKEND_URL = process.env.REACT_APP_EDTECH_BACKEND_URL;
 
   const fetchCourses = async () => {
     try {
