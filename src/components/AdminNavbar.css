@@ -1,0 +1,96 @@
+/* AdminNavbar.css - Clean UI, Responsive, Black & White Palette */
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 92%;
+  max-width: 1200px;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title (left) */
+.navbar-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.navbar-title:hover {
+  color: #000;
+}
+
+/* Center heading (middle) */
+.navbar-center-1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-right: 5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hamburger or avatar (right) */
+.navbar-menu {
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 2rem;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  min-width: 160px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.dropdown > div {
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown > div:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 16px;
+    width: 94%;
+  }
+
+  .navbar-title {
+    font-size: 1.4rem;
+  }
+
+  .navbar-center-1 {
+    display: none; /* optional: hide center text on mobile */
+  }
+
+  .navbar-menu {
+    font-size: 1.4rem;
+  }
+}
